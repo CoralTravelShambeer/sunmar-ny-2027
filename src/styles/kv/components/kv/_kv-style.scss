@@ -69,9 +69,12 @@ $content-max-width: 1360px;
 
   [slot="text"] {
     margin: 0;
+    max-width: 264px;
     font-size: 16px;
     font-weight: 900;
     line-height: 24px;
+    text-box-edge: cap alphabetic;
+    text-box-trim: trim-both;
   }
 
   [slot="text"]::first-line {
@@ -120,12 +123,16 @@ $content-max-width: 1360px;
     }
 
     [slot="title"] {
+      max-width: 500px;
       margin-bottom: 24px;
       font-size: 56px;
       line-height: 56px;
+      text-box-edge: cap alphabetic;
+      text-box-trim: trim-both;
     }
 
     [slot="text"] {
+      max-width: 394px;
       font-size: 24px;
       font-weight: 700;
       line-height: 32px;
