@@ -9,7 +9,7 @@
   width: 100%;
   padding: 40px 16px;
   color: #232323;
-  font-family: "Museo Sans Cyrl", Arial, sans-serif;
+  font-family: var(--theme-font-family, "Museo_Sans", "Museo_Sans_Cyrill", sans-serif);
 
   *,
   *::before,

@@ -13,17 +13,19 @@
     min-height: 84px;
     min-width: 0;
     padding: 12px;
-    overflow: visible;
+    overflow: hidden;
     background-color: #edf2ff;
     border-radius: 12px;
-    --sub-card-image-space: 60%;
+    --sub-card-image-space: 40%;
+    --sub-card-image-offset: 0px;
   }
 
   .sub-card::before {
     content: "";
     float: right;
     width: var(--sub-card-image-space);
-    height: 72px;
+    height: 60px;
+    shape-outside: inset(var(--sub-card-image-offset) 0 0 0);
     margin-left: 8px;
   }
 
@@ -139,9 +141,30 @@
     background-size: auto 136px;
   }
 
-  .card:nth-child(1) .s-c-3,
+  .card:nth-child(1) .s-c-3 {
+    --sub-card-image-space: 36%;
+  }
+
+  .card:nth-child(2) .s-c-2 {
+    --sub-card-image-space: 25%;
+  }
+
+  .card:nth-child(2) .s-c-4 {
+    --sub-card-image-space: 35%;
+    --sub-card-image-offset: 9px;
+  }
+
+  .card:nth-child(3) .s-c-1 {
+    --sub-card-image-space: 28%;
+  }
+
+  .card:nth-child(3) .s-c-3 {
+    --sub-card-image-space: 35%;
+    --sub-card-image-offset: 9px;
+  }
+
   .card:nth-child(3) .s-c-5 {
-    --sub-card-image-space: 44%;
+    --sub-card-image-space: 29%;
   }
 
   .card:nth-child(1) .s-c-3,
@@ -203,7 +226,36 @@
     .card:nth-child(3) .s-c-1 {
       grid-column: 1 / span 2;
       grid-row: 1;
-      --sub-card-image-space: 65%;
+
+    .card:nth-child(1) .s-c-1 {
+      --sub-card-image-space: 46%;
+    }
+
+    .card:nth-child(1) .s-c-2 {
+      --sub-card-image-space: 45%;
+    }
+
+    .card:nth-child(1) .s-c-3 {
+      --sub-card-image-space: 42%;
+    }
+
+    .card:nth-child(2) .s-c-1 {
+      --sub-card-image-space: 40%;
+    }
+
+    .card:nth-child(2) .s-c-2 {
+      --sub-card-image-space: 36%;
+    }
+
+    .card:nth-child(2) .s-c-3 {
+      --sub-card-image-space: 45%;
+    }
+
+    .card:nth-child(2) .s-c-4 {
+      --sub-card-image-space: 36%;
+    }
+      --sub-card-image-space: 45%;
+      --sub-card-image-offset: 18px;
     }
 
     .card:nth-child(3) .s-c-1::after {
@@ -214,7 +266,7 @@
     .card:nth-child(3) .s-c-2 {
       grid-column: 3 / span 2;
       grid-row: 1;
-      --sub-card-image-space: 65%;
+      --sub-card-image-space: 35%;
     }
 
     .card:nth-child(3) .s-c-2::after {
@@ -225,7 +277,8 @@
     .card:nth-child(3) .s-c-3 {
       grid-column: 5 / span 2;
       grid-row: 1;
-      --sub-card-image-space: 65%;
+      --sub-card-image-space: 45%;
+      --sub-card-image-offset: 30px;
     }
 
     .card:nth-child(3) .s-c-3::after {
@@ -236,7 +289,8 @@
     .card:nth-child(3) .s-c-4 {
       grid-column: 1 / span 3;
       grid-row: 2;
-      --sub-card-image-space: 50%;
+      --sub-card-image-space: 40%;
+      --sub-card-image-offset: 12px;
     }
 
     .card:nth-child(3) .s-c-4::after {
@@ -247,7 +301,7 @@
     .card:nth-child(3) .s-c-5 {
       grid-column: 4 / span 3;
       grid-row: 2;
-      --sub-card-image-space: 50%;
+      --sub-card-image-space: 31%;
     }
 
     .card:nth-child(3) .s-c-5::after {
