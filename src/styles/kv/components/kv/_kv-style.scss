@@ -1,5 +1,138 @@
-$spacing: 2rem;
+$kv-max-width: 1368px;
+$content-max-width: 1360px;
 
-.sunmarino {
-  padding-block: $spacing;
+.sunmarino:has(> header > sunmar-kv) {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f7fb;
+  color: #000;
+  font-family: var(
+    --theme-font-family,
+    "Museo_Sans",
+    "Museo_Sans_Cyrill",
+    sans-serif
+  );
+
+  > header {
+    width: min(100%, $kv-max-width);
+    margin-inline: auto;
+  }
+
+  > main {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 40px max(32px, calc((100% - $content-max-width) / 2));
+  }
+
+  sunmar-kv {
+    --sunmar-image-height: 100%;
+    --sunmar-image-object-fit: cover;
+    --sunmar-image-object-position: center center;
+    --sunmar-kv-content-color: #fff;
+    --sunmar-kv-content-max-width: 374px;
+    display: block;
+    width: 100%;
+  }
+
+  sunmar-kv::part(root),
+  sunmar-kv::part(content) {
+    min-height: 556px;
+  }
+
+  sunmar-kv::part(root) {
+    border-radius: 0;
+  }
+
+  sunmar-kv::part(content) {
+    align-items: flex-start;
+    padding: 85px 32px 48px;
+  }
+
+  [slot="title"],
+  [slot="text"] {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    color: #fff;
+    font-family: inherit;
+    overflow-wrap: anywhere;
+    white-space: pre-line;
+  }
+
+  [slot="title"] {
+    margin: 0 0 16px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+  }
+
+  [slot="text"] {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 24px;
+  }
+
+  [slot="text"]::first-line {
+    font-weight: 500;
+  }
+
+  .kv-text {
+    margin: 0;
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    overflow-wrap: anywhere;
+    text-align: center;
+    text-box-edge: cap alphabetic;
+    text-box-trim: trim-both;
+  }
+}
+
+@media (min-width: 768px) {
+  .sunmarino:has(> header > sunmar-kv) {
+    sunmar-kv::part(root),
+    sunmar-kv::part(content) {
+      min-height: 520px;
+    }
+
+    sunmar-kv::part(root) {
+      border-radius: 16px;
+    }
+
+    .kv-text {
+      text-align: left;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .sunmarino:has(> header > sunmar-kv) {
+    sunmar-kv {
+      --sunmar-kv-content-max-width: 549px;
+    }
+
+    sunmar-kv::part(content) {
+      align-items: center;
+      padding: 48px 110px;
+    }
+
+    [slot="title"] {
+      margin-bottom: 24px;
+      font-size: 56px;
+      line-height: 56px;
+    }
+
+    [slot="text"] {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 32px;
+    }
+
+    [slot="text"]::first-line {
+      font-weight: 300;
+    }
+  }
 }
