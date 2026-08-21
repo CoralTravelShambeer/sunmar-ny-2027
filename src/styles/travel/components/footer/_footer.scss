@@ -1,0 +1,60 @@
+.sunmarino:has(> .sunmarino-header) {
+  .sunmarino-main-footer {
+    margin-top: 24px;
+  }
+
+  .text-main {
+    color: #000;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    overflow-wrap: anywhere;
+  }
+
+  .sunmarino-footer {
+    margin-top: 40px;
+  }
+
+  .text-footer {
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    overflow-wrap: anywhere;
+    text-box-trim: trim-both;
+    text-box-edge: cap alphabetic;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 767px) {
+  .sunmarino:has(> .sunmarino-header) {
+    .text-footer {
+      height: 134px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .sunmarino:has(> .sunmarino-header) {
+    .sunmarino-main-footer {
+      margin-top: 12px;
+    }
+
+    .sunmarino-footer {
+      margin-top: 24px;
+    }
+
+    .text-footer {
+      text-align: left;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .sunmarino:has(> .sunmarino-header) {
+    .text-footer {
+      height: 38px;
+    }
+  }
+}

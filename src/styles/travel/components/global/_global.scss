@@ -1,0 +1,48 @@
+.sunmarino:has(> .sunmarino-header) {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 40px 16px;
+  color: #232323;
+  background-color: #f3f9ff;
+  font-family: "Museo Sans Cyrl", Arial, sans-serif;
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  :where(h2, h3, p, ul) {
+    margin: 0;
+    padding: 0;
+  }
+
+  :where(ul) {
+    list-style: none;
+  }
+
+  .sunmarino-header,
+  .sunmarino-main,
+  .sunmarino-footer {
+    width: 100%;
+    max-width: 1344px;
+    margin-inline: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .sunmarino:has(> .sunmarino-header) {
+    padding-inline: 32px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sunmarino:has(> .sunmarino-header) {
+    .sunmarino-header,
+    .sunmarino-main-cards-items {
+      width: calc(100% + 16px);
+    }
+  }
+}

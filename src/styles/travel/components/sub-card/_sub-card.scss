@@ -16,8 +16,6 @@
     overflow: hidden;
     background-color: #edf2ff;
     background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: auto 84px;
     border-radius: 12px;
   }
 
@@ -64,6 +62,62 @@
 
   .card:nth-child(3) .s-c-5 {
     background-image: url("/images/cards/super-food-card.webp");
+  }
+
+  .card:nth-child(1) .s-c-1 {
+    background-position: right -29px top 12px;
+    background-size: auto 89px;
+  }
+
+  .card:nth-child(1) .s-c-2,
+  .card:nth-child(2) .s-c-3 {
+    background-position: right -54px top -16px;
+    background-size: auto 128px;
+  }
+
+  .card:nth-child(1) .s-c-3 {
+    background-position: right 1px top -2px;
+    background-size: 142px 84px;
+  }
+
+  .card:nth-child(2) .s-c-1 {
+    background-position: right -35px top 12px;
+    background-size: auto 81px;
+  }
+
+  .card:nth-child(2) .s-c-2 {
+    background-position: right -18px top 5px;
+    background-size: auto 98px;
+  }
+
+  .card:nth-child(2) .s-c-4 {
+    background-position: right -34px top 21px;
+    background-size: auto 68px;
+  }
+
+  .card:nth-child(3) .s-c-1 {
+    background-position: right -23px top 4px;
+    background-size: auto 104px;
+  }
+
+  .card:nth-child(3) .s-c-2 {
+    background-position: right -55px top -18px;
+    background-size: auto 139px;
+  }
+
+  .card:nth-child(3) .s-c-3 {
+    background-position: right -16px top 21px;
+    background-size: auto 78px;
+  }
+
+  .card:nth-child(3) .s-c-4 {
+    background-position: right -23px top 12px;
+    background-size: auto 78px;
+  }
+
+  .card:nth-child(3) .s-c-5 {
+    background-position: right -100px top -25px;
+    background-size: auto 136px;
   }
 
   .card:nth-child(1) .s-c-3,
@@ -125,26 +179,66 @@
     .card:nth-child(3) .s-c-1 {
       grid-column: 1 / span 2;
       grid-row: 1;
+      background-position: right 20px top 30px;
+      background-size: auto 73px;
     }
 
     .card:nth-child(3) .s-c-2 {
       grid-column: 3 / span 2;
       grid-row: 1;
+      background-position: right -22px top -5px;
+      background-size: auto 115px;
     }
 
     .card:nth-child(3) .s-c-3 {
       grid-column: 5 / span 2;
       grid-row: 1;
+      background-position: right -16px top 42px;
+      background-size: auto 57px;
     }
 
     .card:nth-child(3) .s-c-4 {
       grid-column: 1 / span 3;
       grid-row: 2;
+      background-position: right -5px top 24px;
+      background-size: auto 65px;
     }
 
     .card:nth-child(3) .s-c-5 {
       grid-column: 4 / span 3;
       grid-row: 2;
+      background-position: right -113px top -16px;
+      background-size: auto 110px;
+    }
+
+    .card:nth-child(1) .s-c-1 {
+      background-position: right -4px top 15px;
+      background-size: auto 87px;
+    }
+
+    .card:nth-child(1) .s-c-2 {
+      background-position: right -10px top -2px;
+      background-size: auto 115px;
+    }
+
+    .card:nth-child(2) .s-c-1 {
+      background-position: right -17px top 10px;
+      background-size: auto 67px;
+    }
+
+    .card:nth-child(2) .s-c-2 {
+      background-position: right -8px top 12px;
+      background-size: auto 87px;
+    }
+
+    .card:nth-child(2) .s-c-3 {
+      background-position: right -11px top -1px;
+      background-size: auto 115px;
+    }
+
+    .card:nth-child(2) .s-c-4 {
+      background-position: right -34px top 8px;
+      background-size: auto 68px;
     }
   }
 }

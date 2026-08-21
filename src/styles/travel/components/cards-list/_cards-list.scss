@@ -9,18 +9,6 @@
     gap: 24px;
     width: 100%;
   }
-
-  .sunmarino-main-footer {
-    margin-top: 24px;
-  }
-
-  .text-main {
-    color: #000;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 18px;
-    overflow-wrap: anywhere;
-  }
 }
 
 @media (min-width: 768px) {
@@ -32,10 +20,6 @@
 
     .card:nth-child(3) {
       grid-column: 1 / -1;
-    }
-
-    .sunmarino-main-footer {
-      margin-top: 12px;
     }
   }
 }
