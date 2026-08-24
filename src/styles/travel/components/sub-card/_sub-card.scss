@@ -18,6 +18,7 @@
     border-radius: 12px;
     --sub-card-image-space: 40%;
     --sub-card-image-offset: 0px;
+    --sub-card-text-width: 11ch;
   }
 
   .sub-card::after {
@@ -28,7 +29,7 @@
     width: 100%;
     height: 84px;
     background-repeat: no-repeat;
-    background-position: right bottom;
+    background-position: calc(100% + var(--sub-card-image-offset)) bottom;
     background-size: auto;
     border-radius: inherit;
     content: "";
@@ -39,7 +40,8 @@
     position: relative;
     z-index: 1;
     display: block;
-    width: auto;
+    width: 100%;
+    max-width: var(--sub-card-text-width);
     overflow: visible;
     color: #000;
     font-size: 14px;
@@ -53,6 +55,7 @@
 
   .card:nth-child(1) .s-c-1::after {
     background-image: url("/images/sub-cards/hotel-5-stars-card.svg");
+    width: 19ch;
   }
 
   .card:nth-child(2) .s-c-1::after {
@@ -96,17 +99,30 @@
     background-image: url("/images/sub-cards/super-food-card.svg");
   }
 
+  .card:nth-child(1) .s-c-1,
+  .card:nth-child(2) .s-c-1,
+  .card:nth-child(3) .s-c-1 {
+    --sub-card-text-width: 9ch;
+  }
+
+  .card:nth-child(3) .s-c-4 {
+    --sub-card-text-width: 8ch;
+  }
+
   .card:nth-child(1) .s-c-3 {
     --sub-card-image-space: 36%;
+    --sub-card-text-width: 18ch;
   }
 
   .card:nth-child(2) .s-c-2 {
     --sub-card-image-space: 25%;
+    --sub-card-text-width: 11ch;
   }
 
   .card:nth-child(2) .s-c-4 {
     --sub-card-image-space: 35%;
     --sub-card-image-offset: 9px;
+    --sub-card-text-width: 12ch;
   }
 
   .card:nth-child(3) .s-c-1 {
@@ -120,6 +136,7 @@
 
   .card:nth-child(3) .s-c-5 {
     --sub-card-image-space: 29%;
+    --sub-card-text-width: 15ch;
   }
 
   .card:nth-child(1) .s-c-3,
