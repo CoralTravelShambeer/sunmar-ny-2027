@@ -11,10 +11,26 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 426px) {
+  .sunmarino {
+    .card-list {
+      justify-items: center;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 432px;
+    }
+  }
+}
+
+@media (min-width: 896px) {
   .sunmarino {
     .card-list {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+      justify-content: center;
+      max-width: 896px;
+      margin-inline: auto;
       gap: 32px;
     }
 
@@ -28,6 +44,9 @@
   .sunmarino {
     .card-list {
       grid-template-columns: repeat(3, minmax(0, 1fr));
+      justify-content: stretch;
+      max-width: none;
+      margin-inline: 0;
     }
 
     .card:nth-child(3) {
