@@ -1,12 +1,4 @@
-@mixin sub-card-image(
-  $image-path,
-  $background-position: right bottom,
-  $background-size: contain
-) {
-  background-image: url($image-path);
-  background-position: $background-position;
-  background-size: $background-size;
-}
+@use "mixins/sub-card-image" as scm;
 
 .sunmarino {
   .sub-cards-list {
@@ -42,7 +34,7 @@
   }
 
   .card:nth-child(1) .s-c-1 {
-    @include sub-card-image(
+    @include scm.sub-card-image(
       "/images/sub-cards/hotel-5-stars-card.svg",
       right bottom,
       11.8ch auto
@@ -50,7 +42,7 @@
   }
 
   .card:nth-child(2) .s-c-1 {
-    @include sub-card-image(
+    @include scm.sub-card-image(
       "/images/sub-cards/hotel-5-stars-2-card.svg",
       right bottom,
       9.2ch auto
@@ -58,7 +50,7 @@
   }
 
   .card:nth-child(3) .s-c-4 {
-    @include sub-card-image(
+    @include scm.sub-card-image(
       "/images/sub-cards/hotel-5-stars-3-card.svg",
       right bottom,
       10.1ch auto
@@ -67,7 +59,7 @@
 
   .card:nth-child(1) .s-c-2,
   .card:nth-child(2) .s-c-3 {
-    @include sub-card-image(
+    @include scm.sub-card-image(
       "/images/sub-cards/bed-card.svg",
       right bottom,
       10.9ch auto
@@ -75,7 +67,7 @@
   }
 
   .card:nth-child(3) .s-c-2 {
-    @include sub-card-image(
+    @include scm.sub-card-image(
       "/images/sub-cards/bed-2-card.svg",
       right bottom,
       11.35ch auto
@@ -83,7 +75,7 @@
   }
 
   .card:nth-child(1) .s-c-3 {
-    @include sub-card-image(
+    @include scm.sub-card-image(
       "/images/sub-cards/food-card.svg",
       right bottom,
       14.7ch auto
@@ -91,7 +83,7 @@
   }
 
   .card:nth-child(2) .s-c-4 {
-    @include sub-card-image(
+    @include scm.sub-card-image(
       "/images/sub-cards/food-2-card.svg",
       right bottom,
       9ch auto
@@ -99,7 +91,7 @@
   }
 
   .card:nth-child(3) .s-c-3 {
-    @include sub-card-image(
+    @include scm.sub-card-image(
       "/images/sub-cards/food-3-card.svg",
       right bottom,
       12.8ch auto
@@ -107,7 +99,7 @@
   }
 
   .card:nth-child(2) .s-c-2 {
-    @include sub-card-image(
+    @include scm.sub-card-image(
       "/images/sub-cards/hotel-oae-card.svg",
       calc(100% + 5px) bottom,
       8.3ch auto
@@ -115,7 +107,7 @@
   }
 
   .card:nth-child(3) .s-c-1 {
-    @include sub-card-image(
+    @include scm.sub-card-image(
       "/images/sub-cards/hotel-thailand-card.svg",
       calc(100% + 5px) bottom,
       8.8ch auto
@@ -123,7 +115,7 @@
   }
 
   .card:nth-child(3) .s-c-5 {
-    @include sub-card-image(
+    @include scm.sub-card-image(
       "/images/sub-cards/super-food-card.svg",
       right bottom,
       18.2ch auto

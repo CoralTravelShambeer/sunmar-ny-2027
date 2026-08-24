@@ -1,0 +1,9 @@
+@mixin sub-card-image(
+  $image-path,
+  $background-position: right bottom,
+  $background-size: contain
+) {
+  background-image: url($image-path);
+  background-position: $background-position;
+  background-size: $background-size;
+}
