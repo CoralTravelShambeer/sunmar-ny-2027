@@ -31,7 +31,7 @@
     max-width: 100%;
     background-repeat: no-repeat;
     background-position: right bottom;
-    background-size: 100% auto;
+    background-size: contain;
     border-radius: inherit;
     content: "";
     pointer-events: none;
@@ -437,9 +437,9 @@
     }
 
     .card:nth-child(3) .s-c-5::after {
-      right: -35px;
+      right: -40px;
       bottom: 6px;
-      width: 14.95ch;
+      width: 13ch;
     }
   }
 }
