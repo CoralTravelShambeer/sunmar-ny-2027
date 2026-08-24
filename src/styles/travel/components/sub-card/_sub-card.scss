@@ -20,15 +20,6 @@
     --sub-card-image-offset: 0px;
   }
 
-  .sub-card::before {
-    content: "";
-    float: right;
-    width: var(--sub-card-image-space);
-    height: 60px;
-    shape-outside: inset(var(--sub-card-image-offset) 0 0 0);
-    margin-left: 8px;
-  }
-
   .sub-card::after {
     position: absolute;
     z-index: 0;
@@ -54,7 +45,10 @@
     font-size: 14px;
     font-weight: 300;
     line-height: 18px;
-    overflow-wrap: anywhere;
+    hyphens: none;
+    overflow-wrap: normal;
+    text-wrap: wrap;
+    word-break: normal;
   }
 
   .card:nth-child(1) .s-c-1::after {
@@ -243,18 +237,6 @@
       grid-column: 4 / span 3;
       grid-row: 2;
       --sub-card-image-space: 31%;
-    }
-  }
-}
-
-@media (max-width: 424px) {
-  .sunmarino {
-    .sub-cards-list {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      width: 100%;
-      min-width: 0;
     }
   }
 }
