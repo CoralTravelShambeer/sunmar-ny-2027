@@ -30,7 +30,7 @@
   .sunmarino-main,
   .sunmarino-footer {
     width: 100%;
-    max-width: 1344px;
+    max-width: 1360px;
     margin-inline: auto;
   }
 }
@@ -38,14 +38,5 @@
 @media (min-width: 768px) {
   .sunmarino {
     padding-inline: 32px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .sunmarino {
-    .sunmarino-header,
-    .sunmarino-main-cards-items {
-      width: calc(100% + 16px);
-    }
   }
 }

@@ -28,6 +28,7 @@
     bottom: 0;
     width: 100%;
     height: 84px;
+    max-width: 100%;
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: 100% auto;
@@ -55,58 +56,58 @@
 
   .card:nth-child(1) .s-c-1::after {
     background-image: url("/images/sub-cards/hotel-5-stars-card.svg");
-    max-width: 11ch;
+    width: 11.8ch;
   }
 
   .card:nth-child(2) .s-c-1::after {
     background-image: url("/images/sub-cards/hotel-5-stars-2-card.svg");
-    max-width: 8ch;
+    width: 9.2ch;
   }
 
   .card:nth-child(3) .s-c-4::after {
     background-image: url("/images/sub-cards/hotel-5-stars-3-card.svg");
-    max-width: 9ch;
+    width: 10.1ch;
   }
 
   .card:nth-child(1) .s-c-2::after,
   .card:nth-child(2) .s-c-3::after {
     background-image: url("/images/sub-cards/bed-card.svg");
-    max-width: 12ch;
+    width: 10.9ch;
   }
 
   .card:nth-child(3) .s-c-2::after {
     background-image: url("/images/sub-cards/bed-2-card.svg");
-    max-width: 12ch;
+    width: 11.35ch;
   }
 
   .card:nth-child(1) .s-c-3::after {
     background-image: url("/images/sub-cards/food-card.svg");
-    max-width: 11ch;
+    width: 14.7ch;
   }
 
   .card:nth-child(2) .s-c-4::after {
     background-image: url("/images/sub-cards/food-2-card.svg");
-    max-width: 11ch;
+    width: 9ch;
   }
 
   .card:nth-child(3) .s-c-3::after {
     background-image: url("/images/sub-cards/food-3-card.svg");
-    max-width: 11ch;
+    width: 12.8ch;
   }
 
   .card:nth-child(2) .s-c-2::after {
     background-image: url("/images/sub-cards/hotel-oae-card.svg");
-    max-width: 7ch;
+    width: 8.3ch;
   }
 
   .card:nth-child(3) .s-c-1::after {
     background-image: url("/images/sub-cards/hotel-thailand-card.svg");
-    max-width: 8ch;
+    width: 8.8ch;
   }
 
   .card:nth-child(3) .s-c-5::after {
     background-image: url("/images/sub-cards/super-food-card.svg");
-    max-width: 18ch;
+    width: 18.2ch;
   }
 
   .card:nth-child(1) .s-c-1,
@@ -115,18 +116,27 @@
     --sub-card-text-width: 9ch;
   }
 
+  .card:nth-child(1) .s-c-1,
+  .card:nth-child(2) .s-c-1 {
+    --sub-card-text-width: 11ch;
+  }
+
+  .card:nth-child(3) .s-c-1 {
+    --sub-card-text-width: 13ch;
+  }
+
   .card:nth-child(3) .s-c-4 {
-    --sub-card-text-width: 8ch;
+    --sub-card-text-width: 9ch;
   }
 
   .card:nth-child(1) .s-c-3 {
     --sub-card-image-space: 36%;
-    --sub-card-text-width: 18ch;
+    --sub-card-text-width: 22ch;
   }
 
   .card:nth-child(2) .s-c-2 {
     --sub-card-image-space: 25%;
-    --sub-card-text-width: 11ch;
+    --sub-card-text-width: 13ch;
   }
 
   .card:nth-child(2) .s-c-4 {
@@ -142,11 +152,12 @@
   .card:nth-child(3) .s-c-3 {
     --sub-card-image-space: 35%;
     --sub-card-image-offset: 9px;
+    --sub-card-text-width: 8ch;
   }
 
   .card:nth-child(3) .s-c-5 {
     --sub-card-image-space: 29%;
-    --sub-card-text-width: 15ch;
+    --sub-card-text-width: 30ch;
   }
 
   .card:nth-child(1) .s-c-3,
@@ -264,6 +275,74 @@
       grid-column: 4 / span 3;
       grid-row: 2;
       --sub-card-image-space: 31%;
+      --sub-card-text-width: 14ch;
+    }
+
+    .card:nth-child(3) .s-c-1::after {
+      right: 20px;
+      bottom: -19px;
+      width: 8ch;
+    }
+
+    .card:nth-child(3) .s-c-2::after {
+      bottom: -7px;
+      width: 12.35ch;
+    }
+
+    .card:nth-child(3) .s-c-3::after {
+      bottom: -2px;
+      width: 8.9ch;
+    }
+
+    .card:nth-child(3) .s-c-4::after {
+      bottom: -12px;
+      width: 10.1ch;
+    }
+
+    .card:nth-child(3) .s-c-5::after {
+      right: -35px;
+      bottom: 6px;
+      width: 14.95ch;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .sunmarino {
+    .card:nth-child(1) .s-c-1::after {
+      bottom: -17px;
+      width: 14.15ch;
+    }
+
+    .card:nth-child(1) .s-c-2::after {
+      bottom: -21px;
+      width: 13.95ch;
+    }
+
+    .card:nth-child(1) .s-c-3::after {
+      right: 25px;
+      bottom: -6px;
+      width: 15.95ch;
+    }
+
+    .card:nth-child(2) .s-c-1::after {
+      bottom: -4px;
+      width: 9ch;
+    }
+
+    .card:nth-child(2) .s-c-2::after {
+      bottom: -6px;
+      width: 8.2ch;
+    }
+
+    .card:nth-child(2) .s-c-3::after {
+      bottom: -21px;
+      width: 13.7ch;
+    }
+
+    .card:nth-child(2) .s-c-4::after {
+      bottom: 11px;
+      width: 9ch;
     }
   }
 }
