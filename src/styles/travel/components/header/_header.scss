@@ -1,4 +1,4 @@
-.sunmarino:has(> .sunmarino-header) {
+.sunmarino {
   .sunmarino-header {
     display: flex;
     flex-direction: column;
@@ -35,7 +35,7 @@
 }
 
 @media (min-width: 400px) and (max-width: 767px) {
-  .sunmarino:has(> .sunmarino-header) {
+  .sunmarino {
     .sunmarino-header {
       height: 180px;
     }
@@ -51,7 +51,7 @@
 }
 
 @media (min-width: 768px) {
-  .sunmarino:has(> .sunmarino-header) {
+  .sunmarino {
     .sunmarino-header {
       gap: 16px;
       margin-bottom: 24px;
@@ -70,7 +70,7 @@
 }
 
 @media (min-width: 1200px) {
-  .sunmarino:has(> .sunmarino-header) {
+  .sunmarino {
     .sunmarino-header {
       height: 70px;
     }

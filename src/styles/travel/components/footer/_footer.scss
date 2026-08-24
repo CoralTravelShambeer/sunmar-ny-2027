@@ -1,4 +1,4 @@
-.sunmarino:has(> .sunmarino-header) {
+.sunmarino {
   .sunmarino-main-footer {
     margin-top: 24px;
   }
@@ -28,7 +28,7 @@
 }
 
 @media (min-width: 400px) and (max-width: 767px) {
-  .sunmarino:has(> .sunmarino-header) {
+  .sunmarino {
     .text-footer {
       height: 134px;
     }
@@ -36,7 +36,7 @@
 }
 
 @media (min-width: 768px) {
-  .sunmarino:has(> .sunmarino-header) {
+  .sunmarino {
     .sunmarino-main-footer {
       margin-top: 12px;
     }
@@ -52,7 +52,7 @@
 }
 
 @media (min-width: 1200px) {
-  .sunmarino:has(> .sunmarino-header) {
+  .sunmarino {
     .text-footer {
       height: 38px;
     }

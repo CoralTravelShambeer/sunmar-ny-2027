@@ -1,4 +1,4 @@
-.sunmarino:has(> .sunmarino-header) {
+.sunmarino {
   .card {
     display: flex;
     min-width: 0;
@@ -59,7 +59,7 @@
 }
 
 @media (min-width: 768px) {
-  .sunmarino:has(> .sunmarino-header) {
+  .sunmarino {
     .card:nth-child(3) .card-item {
       min-height: 307px;
     }

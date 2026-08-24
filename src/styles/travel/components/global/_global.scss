@@ -2,7 +2,7 @@
   background-color: #f3f9ff;
 }
 
-.sunmarino:has(> .sunmarino-header) {
+.sunmarino {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -36,13 +36,13 @@
 }
 
 @media (min-width: 768px) {
-  .sunmarino:has(> .sunmarino-header) {
+  .sunmarino {
     padding-inline: 32px;
   }
 }
 
 @media (min-width: 1200px) {
-  .sunmarino:has(> .sunmarino-header) {
+  .sunmarino {
     .sunmarino-header,
     .sunmarino-main-cards-items {
       width: calc(100% + 16px);
