@@ -111,7 +111,7 @@ $content-max-width: 1360px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .sunmarino:has(> header > sunmar-kv) {
     sunmar-kv {
       --sunmar-kv-content-max-width: 549px;
