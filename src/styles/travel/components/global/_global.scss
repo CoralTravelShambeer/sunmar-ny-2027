@@ -1,15 +1,6 @@
 .sunmarino {
-  background-color: #f3f9ff;
-}
-
-.sunmarino {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 40px 16px;
-  color: #232323;
-  font-family: var(--theme-font-family, "Museo_Sans", "Museo_Sans_Cyrill", sans-serif);
+  padding-block: 40px;
+  padding-inline: 16px;
 
   *,
   *::before,
@@ -25,18 +16,14 @@
   :where(ul) {
     list-style: none;
   }
+}
 
-  .sunmarino-header,
-  .sunmarino-main,
-  .sunmarino-footer {
-    width: 100%;
-    max-width: 1360px;
-    margin-inline: auto;
+@media (min-width: 993px) {
+  .sunmarino {
+    padding-inline: 0;
   }
 }
 
-@media (min-width: 768px) {
-  .sunmarino {
-    padding-inline: 32px;
-  }
+.row-outer-container:has(.sunmarino) {
+  background-color: var(--Base-color_Base_Light_Alt, #F3F9FF) !important;
 }

@@ -1,9 +1,6 @@
 .sunmarino {
-  .sunmarino-main-footer {
-    margin-top: 24px;
-  }
-
   .text-main {
+    margin-top: 24px;
     color: #000;
     font-size: 14px;
     font-weight: 300;
@@ -11,11 +8,8 @@
     overflow-wrap: anywhere;
   }
 
-  .sunmarino-footer {
-    margin-top: 40px;
-  }
-
   .text-footer {
+    margin-top: 40px;
     color: #000;
     font-size: 20px;
     font-weight: 500;
@@ -27,34 +21,15 @@
   }
 }
 
-@media (min-width: 400px) and (max-width: 767px) {
-  .sunmarino {
-    .text-footer {
-      height: 134px;
-    }
-  }
-}
-
 @media (min-width: 768px) {
   .sunmarino {
-    .sunmarino-main-footer {
+    .text-main {
       margin-top: 12px;
     }
 
-    .sunmarino-footer {
+    .text-footer {
       margin-top: 24px;
-    }
-
-    .text-footer {
       text-align: left;
-    }
-  }
-}
-
-@media (min-width: 1440px) {
-  .sunmarino {
-    .text-footer {
-      height: 38px;
     }
   }
 }

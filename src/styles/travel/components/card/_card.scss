@@ -1,14 +1,9 @@
 .sunmarino {
-  .card {
-    display: flex;
-    min-width: 0;
-  }
-
   .card-item {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    gap: 24px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto auto 1fr;
+    row-gap: 8px;
     width: 100%;
     min-height: 307px;
     min-width: 0;
@@ -20,16 +15,6 @@
 
   .card:nth-child(3) .card-item {
     min-height: 403px;
-  }
-
-  .card-header {
-    display: flex;
-    flex: none;
-    flex-direction: column;
-    gap: 8px;
-    min-height: 71px;
-    min-width: 0;
-    overflow: visible;
   }
 
   .header-h2-card {
@@ -51,14 +36,12 @@
     text-box-edge: cap alphabetic;
   }
 
-  .card-main {
-    flex: none;
-    width: 100%;
-    min-width: 0;
+  .sub-cards-list {
+    margin-top: 16px;
   }
 }
 
-@media (min-width: 896px) {
+@media (min-width: 896px) and (max-width: 1023px) {
   .sunmarino {
     .card:nth-child(3) .card-item {
       min-height: 307px;
