@@ -1,8 +1,8 @@
-@use "../utils/variables" as vars;
+@use "../utils/variables" as *;
 
 .sunmarino:has(> .kv-text) {
   .kv-text {
-    width: min(100%, vars.$content-max-width);
+    width: min(100%, $content-max-width);
     margin: 0 auto;
     color: #000;
     font-size: 20px;

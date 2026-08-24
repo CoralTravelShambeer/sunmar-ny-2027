@@ -1,8 +1,8 @@
-@use "../utils/variables" as vars;
+@use "../utils/variables" as *;
 
 .sunmarino:has(> sunmar-kv) {
   > sunmar-kv {
-    width: min(100%, vars.$kv-max-width);
+    width: min(100%, $kv-max-width);
     margin-inline: auto;
   }
 
