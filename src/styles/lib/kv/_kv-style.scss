@@ -1,9 +1,8 @@
-$kv-max-width: 1368px;
-$content-max-width: 1360px;
+@use "../utils/variables" as vars;
 
 .sunmarino:has(> sunmar-kv) {
   > sunmar-kv {
-    width: min(100%, $kv-max-width);
+    width: min(100%, vars.$kv-max-width);
     margin-inline: auto;
   }
 
@@ -61,18 +60,6 @@ $content-max-width: 1360px;
   }
 }
 
-.sunmarino:has(> .kv-text) {
-  .kv-text {
-    width: min(100%, $content-max-width);
-    margin: 0 auto;
-    color: #000;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24px;
-    text-align: center;
-  }
-}
-
 @media (min-width: 768px) {
   .sunmarino:has(> sunmar-kv) {
     sunmar-kv::part(root),
@@ -82,13 +69,6 @@ $content-max-width: 1360px;
 
     sunmar-kv::part(root) {
       border-radius: 16px;
-    }
-
-  }
-
-  .sunmarino:has(> .kv-text) {
-    .kv-text {
-      text-align: left;
     }
   }
 }
