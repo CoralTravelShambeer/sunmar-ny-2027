@@ -35,15 +35,15 @@
 
   .card:nth-child(1) .s-c-1 {
     @include scm.sub-card-image(
-      "/images/correct-card-images/hotel-egypt-3-stars.png",
+      "/images/correct-card-images/hotel-egypt-3-stars.webp",
       right bottom,
-      11.8ch auto
+      8ch auto
     );
   }
 
   .card:nth-child(2) .s-c-1 {
     @include scm.sub-card-image(
-      "/images/correct-card-images/hotel-egypt-5-stars.png",
+      "/images/correct-card-images/hotel-egypt-5-stars.webp",
       right bottom,
       9.2ch auto
     );
@@ -51,7 +51,7 @@
 
   .card:nth-child(3) .s-c-4 {
     @include scm.sub-card-image(
-      "/images/correct-card-images/hotel-turkey-5-stars.png",
+      "/images/correct-card-images/hotel-turkey-5-stars.webp",
       right bottom,
       10.1ch auto
     );
@@ -59,7 +59,7 @@
 
   .card:nth-child(1) .s-c-2 {
     @include scm.sub-card-image(
-      "/images/correct-card-images/stay-egypt-7-nights.png",
+      "/images/correct-card-images/stay-7-nights.webp",
       right bottom,
       10.9ch auto
     );
@@ -67,7 +67,7 @@
 
   .card:nth-child(2) .s-c-3 {
     @include scm.sub-card-image(
-      "/images/correct-card-images/stay-uae-7-nights.png",
+      "/images/correct-card-images/stay-7-nights.webp",
       right bottom,
       10.9ch auto
     );
@@ -75,7 +75,7 @@
 
   .card:nth-child(3) .s-c-2 {
     @include scm.sub-card-image(
-      "/images/correct-card-images/stay-thailand-7-nights.png",
+      "/images/correct-card-images/stay-7-nights.webp",
       right bottom,
       11.35ch auto
     );
@@ -83,7 +83,7 @@
 
   .card:nth-child(1) .s-c-3 {
     @include scm.sub-card-image(
-      "/images/correct-card-images/meal-plan-all-inclusive.png",
+      "/images/correct-card-images/meal.webp",
       right bottom,
       14.7ch auto
     );
@@ -91,7 +91,7 @@
 
   .card:nth-child(2) .s-c-4 {
     @include scm.sub-card-image(
-      "/images/correct-card-images/meal-plan-half-board.png",
+      "/images/correct-card-images/meal.webp",
       right bottom,
       9ch auto
     );
@@ -99,7 +99,7 @@
 
   .card:nth-child(3) .s-c-3 {
     @include scm.sub-card-image(
-      "/images/correct-card-images/meal-plan-breakfast.png",
+      "/images/correct-card-images/meal.webp",
       right bottom,
       12.8ch auto
     );
@@ -107,7 +107,7 @@
 
   .card:nth-child(2) .s-c-2 {
     @include scm.sub-card-image(
-      "/images/correct-card-images/hotel-uae-4-stars.png",
+      "/images/correct-card-images/hotel-uae-4-stars.webp",
       calc(100% + 5px) bottom,
       8.3ch auto
     );
@@ -115,7 +115,7 @@
 
   .card:nth-child(3) .s-c-1 {
     @include scm.sub-card-image(
-      "/images/correct-card-images/hotel-thailand-5-stars.png",
+      "/images/correct-card-images/hotel-thailand-5-stars.webp",
       calc(100% + 5px) bottom,
       8.8ch auto
     );
@@ -123,7 +123,7 @@
 
   .card:nth-child(3) .s-c-5 {
     @include scm.sub-card-image(
-      "/images/correct-card-images/festive-all-inclusive.png",
+      "/images/correct-card-images/festive-all-inclusive.webp",
       right bottom,
       18.2ch auto
     );
@@ -304,6 +304,11 @@
     }
 
     .card:nth-child(3) .s-c-5 {
+      background-position: calc(100% + 25px) bottom;
+      background-size: 13ch auto;
+    }
+
+    .card:nth-child(2) .s-c-4 {
       background-position: calc(100% + 25px) bottom;
       background-size: 13ch auto;
     }
