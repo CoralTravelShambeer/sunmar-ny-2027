@@ -1,7 +1,7 @@
 @use "../utils/variables" as *;
 
-.sunmarino:has(> sunmar-kv) {
-  > sunmar-kv {
+.sunmarino {
+  sunmar-kv {
     width: min(100%, $kv-max-width);
     margin-inline: auto;
   }
@@ -61,7 +61,7 @@
 }
 
 @media (min-width: 768px) {
-  .sunmarino:has(> sunmar-kv) {
+  .sunmarino {
     sunmar-kv::part(root),
     sunmar-kv::part(content) {
       min-height: 520px;
@@ -74,7 +74,7 @@
 }
 
 @media (min-width: 1440px) {
-  .sunmarino:has(> sunmar-kv) {
+  .sunmarino {
     sunmar-kv {
       --sunmar-kv-content-max-width: 549px;
     }
