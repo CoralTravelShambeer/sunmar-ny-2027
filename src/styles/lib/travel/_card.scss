@@ -37,15 +37,7 @@
   }
 }
 
-@media (min-width: 896px) and (max-width: 1023px) {
-  .sunmarino {
-    .card:nth-child(3).card-item {
-      min-height: 307px;
-    }
-  }
-}
-
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   .sunmarino {
     .card:nth-child(3).card-item {
       min-height: 307px;
