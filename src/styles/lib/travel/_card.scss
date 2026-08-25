@@ -5,8 +5,7 @@
     grid-template-rows: auto auto 1fr;
     row-gap: 8px;
     width: 100%;
-    min-height: 307px;
-    min-width: 0;
+    align-self: stretch;
     padding: 16px;
     overflow: hidden;
     background-color: #fff;
@@ -33,7 +32,7 @@
   }
 
   .sub-cards-list {
-    margin-top: 16px;
+    margin-top: auto;
   }
 }
 
