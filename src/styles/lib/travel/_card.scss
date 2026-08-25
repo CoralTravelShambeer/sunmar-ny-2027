@@ -13,7 +13,7 @@
     border-radius: 16px;
   }
 
-  .card:nth-child(3) .card-item {
+  .card:nth-child(3).card-item {
     min-height: 403px;
   }
 
@@ -39,7 +39,7 @@
 
 @media (min-width: 896px) and (max-width: 1023px) {
   .sunmarino {
-    .card:nth-child(3) .card-item {
+    .card:nth-child(3).card-item {
       min-height: 307px;
     }
   }

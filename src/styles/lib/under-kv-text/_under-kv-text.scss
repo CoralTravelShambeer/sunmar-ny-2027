@@ -1,6 +1,6 @@
 @use "../utils/variables" as *;
 
-.sunmarino:has(> .kv-text) {
+.sunmarino {
   .kv-text {
     width: min(100%, $content-max-width);
     margin: 0 auto;
@@ -13,7 +13,7 @@
 }
 
 @media (min-width: 768px) {
-  .sunmarino:has(> .kv-text) {
+  .sunmarino {
     .kv-text {
       text-align: left;
     }
