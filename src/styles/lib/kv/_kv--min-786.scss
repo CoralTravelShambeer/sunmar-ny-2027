@@ -1,0 +1,10 @@
+section.kv {
+  @media (max-width: 768px) {
+    padding-top: 0;
+    padding-inline: 0;
+
+    [slot="text"] {
+      font-size: 24px;
+    }
+  }
+}

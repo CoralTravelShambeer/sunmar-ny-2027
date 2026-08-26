@@ -5,16 +5,7 @@ sunmar-kv {
     max-width: 20ch;
     margin-bottom: 16px;
   }
-    [slot="text"] {
-      max-width: 30ch;
-      @media (min-width: 768px) {
-      font-size: 24px;
-    }}
-}
-
-section.kv {
-  @media (max-width: 768px) {
-    padding-top: 0;
-    padding-inline: 0;
+  [slot="text"] {
+    max-width: 30ch;
   }
 }
