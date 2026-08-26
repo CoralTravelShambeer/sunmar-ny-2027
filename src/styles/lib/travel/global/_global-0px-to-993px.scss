@@ -18,11 +18,7 @@
   }
 }
 
-@media (min-width: 993px) {
-  .sunmarino {
-    padding-inline: 0;
-  }
-}
+
 
 .row-outer-container:has(.sunmarino) {
   background-color: var(--Base-color_Base_Light_Alt, #F3F9FF) !important;

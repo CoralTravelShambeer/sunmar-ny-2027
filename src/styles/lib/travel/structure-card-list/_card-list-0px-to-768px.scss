@@ -1,0 +1,9 @@
+.sunmarino {
+  .card-list {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+    width: 100%;
+  }
+}
+

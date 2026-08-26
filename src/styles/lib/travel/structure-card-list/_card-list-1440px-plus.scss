@@ -1,0 +1,12 @@
+@media (min-width: 1440px) {
+  .sunmarino {
+    .card-list {
+      align-items: start;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .card:nth-child(3) {
+      grid-column: auto;
+    }
+  }
+}
