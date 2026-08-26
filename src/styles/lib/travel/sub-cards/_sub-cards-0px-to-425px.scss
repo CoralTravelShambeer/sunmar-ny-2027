@@ -1,0 +1,15 @@
+@media (max-width: 424px) {
+  .sunmarino {
+    .sub-cards-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card:nth-child(3) {
+      .s-c-5 {
+        background-position: calc(100% + 25px) 100%;
+        background-size: 13ch auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@media (min-width: 1440px) {
+  .sunmarino {
+    .card:nth-child(2) {
+      .s-c-4 {
+        background-position: calc(100% + 25px) bottom;
+        background-size: 13ch auto;
+      }
+    }
+
+    .card:nth-child(3) {
+      .s-c-1 {
+        background-position: calc(100% + 5px) calc(100% + 20px);
+      }
+
+      .s-c-3 {
+        background-position: right calc(100% + 15px);
+      }
+
+      .s-c-5 {
+        background-position: calc(100% + 25px) bottom;
+        background-size: 13ch auto;
+      }
+    }
+  }
+}
