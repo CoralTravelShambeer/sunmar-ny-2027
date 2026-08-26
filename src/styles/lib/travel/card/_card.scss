@@ -12,8 +12,10 @@
     border-radius: 16px;
   }
 
-  .card:nth-child(3).card-item {
-    min-height: 403px;
+  .card:nth-child(3) {
+    .card-item {
+      min-height: 403px;
+    }
   }
 
   .header-h2-card {
