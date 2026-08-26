@@ -1,4 +1,6 @@
-@media (min-width: 768px) {
+@use "../../utils/variables" as variables;
+
+@media (min-width: variables.$breakpoint-md) {
   .sunmarino {
     .card:nth-child(3).card-item {
       min-height: 307px;

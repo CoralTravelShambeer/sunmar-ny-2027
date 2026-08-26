@@ -1,4 +1,6 @@
-@media (min-width: 768px) and (max-width: 895px) {
+@use "../../utils/variables" as variables;
+
+@media (min-width: variables.$breakpoint-md) and (max-width: variables.$breakpoint-md-range-max) {
   .sunmarino {
     .card:nth-child(1) {
       .s-c-1 {

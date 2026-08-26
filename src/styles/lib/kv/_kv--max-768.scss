@@ -1,5 +1,7 @@
+@use "../utils/variables" as variables;
+
 section.kv {
-  @media (max-width: 768px) {
+  @media (max-width: variables.$breakpoint-md - 1) {
     padding-top: 0;
     padding-inline: 0;
 

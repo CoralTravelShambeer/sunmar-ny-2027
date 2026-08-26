@@ -1,4 +1,6 @@
-@media (min-width: 768px) {
+@use "../../utils/variables" as variables;
+
+@media (min-width: variables.$breakpoint-md) {
   .sunmarino {
     .card-list {
       grid-template-columns: repeat(2, minmax(0, 1fr));

@@ -1,4 +1,6 @@
-@media (min-width: 993px) {
+@use "../../utils/variables" as variables;
+
+@media (min-width: variables.$breakpoint-lg) {
   .sunmarino {
     padding-inline: 0;
   }

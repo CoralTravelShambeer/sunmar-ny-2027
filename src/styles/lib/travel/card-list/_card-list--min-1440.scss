@@ -1,4 +1,6 @@
-@media (min-width: 1440px) {
+@use "../../utils/variables" as variables;
+
+@media (min-width: variables.$breakpoint-xl) {
   .sunmarino {
     .card-list {
       align-items: start;

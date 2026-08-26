@@ -1,4 +1,6 @@
-@media (max-width: 424px) {
+@use "../../utils/variables" as variables;
+
+@media (max-width: variables.$breakpoint-sm - 1) {
   .sunmarino {
     .sub-cards-list {
       display: flex;
